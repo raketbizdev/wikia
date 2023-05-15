@@ -1,7 +1,3 @@
-# cebuana_admin_frontend
-
-A new Flutter project.
-
 # Docker Installation Guide for Windows
 
 This guide provides a step-by-step process to install Docker on Windows operating system. Docker allows you to run and manage applications in containers, providing a lightweight and isolated environment for your applications.
