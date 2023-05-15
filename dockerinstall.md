@@ -79,11 +79,11 @@ If Docker is properly installed, it will display the version information for bot
 3. To further verify the installation, run the following command to pull and run a test container:
 
 ```shell
-  docker run cebuana-admin-frontend
+  docker run hello-world
 
 ```
 
-Docker will download the "cebuana-admin-frontend" image and run it in a container. If everything is working correctly, you will see a message indicating a successful installation.
+Docker will download the "hello-world" image and run it in a container. If everything is working correctly, you will see a message indicating a successful installation.
 
 Congratulations! You have successfully installed Docker on your Windows system.
 
