@@ -43,8 +43,7 @@ aws secretsmanager get-secret-value --secret-id secret-name
 After retrieving the secret from AWS Secrets Manager, you can save it to a `.env` file. This can be done using the following command:
 
 ```bash
-#!/bin/bash
-echo "Saving secret to .env file..."
+# "Saving secret to .env file..."
 aws secretsmanager get-secret-value --secret-id secret-name --query SecretString --output text > .env
 ```
 
