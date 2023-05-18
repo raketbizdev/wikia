@@ -38,4 +38,18 @@ Once your AWS CLI is configured, you can retrieve the secret from AWS Secrets Ma
 aws secretsmanager get-secret-value --secret-id secret-name
 ```
 
+## Step 4: Save Secret to .env File
+
+After retrieving the secret from AWS Secrets Manager, you can save it to a `.env` file. This can be done using the following command:
+
+```bash
+#!/bin/bash
+echo "Saving secret to .env file..."
+aws secretsmanager get-secret-value --secret-id secret-name --query SecretString --output text > .env
+```
+
+This command will write the secret value to a `.env` file in the current directory. The `--query SecretString --output text` part of the command extracts the secret value from the AWS CLI response and outputs it as plain text.
+
+Please replace `secret-name` with the name of your secret. Also, ensure that your `.env` file is added to your `.gitignore` file to prevent it from being committed to your version control system.
+
 This will output the secret value to your terminal. The `get-secret-value` is a command provided by AWS CLI to retrieve the value of a secret. The `--secret-id` is a parameter where you specify the name or ARN of the secret you want to retrieve.
