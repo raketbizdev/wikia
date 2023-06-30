@@ -59,13 +59,37 @@ Make sure to replace the fields with the specifics for your app. In particular, 
 
 Next, you'll need to build an APK (Android Application Package) or AAB (Android App Bundle) of your app. This is the file that you will upload to the Google Play Store.
 
-In your terminal, navigate to your project directory and run the following command:
+Building an APK (Android Application Package) or AAB (Android App Bundle) is the second step in the process. This involves compiling your React Native code into a file that can be uploaded to the Google Play Store and run on Android devices.
 
-```
-expo build:android
-```
+Here are the detailed steps:
 
-You will be asked whether you want to build an APK or an AAB. Google recommends using AAB, as it allows Google Play to optimize the app distribution based on the user's device configuration. So, choose 'aab' and press Enter.
+1. Open your terminal. This could be Command Prompt, PowerShell, or a Terminal window, depending on your operating system.
+
+2. Use the `cd` command to navigate to your project directory. For example, if your project is located in a folder named `MyApp` on your Desktop, you would type:
+
+   ```bash
+   cd Desktop/MyApp
+   ```
+
+3. Once you're in your project directory, you can tell Expo to start the build process with the following command:
+
+   ```bash
+   expo build:android
+   ```
+
+4. After you run this command, Expo will ask you whether you want to build an APK or an AAB. Here's what you need to know about these options:
+
+   - **APK**: This is a traditional Android installation file. If you choose this option, your app will be built into a single APK file, which includes all the code and resources needed to run your app on any Android device. This file can be large, as it includes everything needed for every possible device configuration.
+
+   - **AAB**: This is a newer format introduced by Google. If you choose this option, your app will be built into an Android App Bundle. When you upload this to the Google Play Store, Google will use it to generate optimized APKs for each device configuration that downloads your app. This means smaller download sizes for your users, as they only download the code and resources that their specific device needs. Google recommends using this option.
+
+   To choose to build an AAB, simply type `aab` and press Enter.
+
+5. Expo will then start the build process. This can take a few minutes. Once it's done, Expo will provide a URL where you can download your APK or AAB file.
+
+Remember to keep this file safe, as you'll need it in the next steps!
+
+Note: If your app uses any native code, you may need to eject from Expo and build your APK or AAB using Android Studio. However, if you're only using JavaScript and Expo's API, you can build your APK or AAB using the `expo build:android` command as described above.
 
 ## Step 3: Generate a Signing Key
 
@@ -136,8 +160,7 @@ Congratulations, you've deployed a React Native App to the Google Play Store usi
 ## Things to Look Out For
 
 - Ensure that all details in the Google Play Console are filled accurately, as these will be visible to the users on your app's listing.
-- Keep your app updated regularly```markdown
-  to meet user demands and fix any bugs.
+- Keep your app updated regularly to meet user demands and fix any bugs.
 - Monitor user feedback and ratings to understand user needs and improve your app accordingly.
 - Always test your app thoroughly before deploying to catch and fix any bugs.
 - Follow all Google Play policies to avoid having your app suspended or removed from the Play Store.
@@ -151,6 +174,4 @@ For visual guides, here are some YouTube videos that can help you:
 
 [![How to Build, Test, and Deploy Your React Native Expo App to the Google Play Store](https://img.youtube.com/vi/pb6OvvSi8Qk/sddefault.jpg)](https://www.youtube.com/watch?v=pb6OvvSi8Qk)
 
-Deploying a React Native app using Expo to the Google Play Store
-Uploading screenshots to the Google Play Store
 This tutorial should help you deploy your React Native app to the Google Play Store. If you encounter any issues, feel free to ask for help.
