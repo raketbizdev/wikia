@@ -168,6 +168,14 @@ Congratulations, you've deployed a React Native App to the Google Play Store usi
 
 With these steps, you should be able to successfully deploy your React Native app to the Google Play Store using Expo. Happy coding!
 
+## Most common Mistakes
+
+1. **Losing the Key Store File:** It was previously your responsibility to keep the key store safe for future updates. If you lost it, you had to create a new application and lose all previous reviews and ratings. To overcome this, Google introduced a new App signing method that preserves the key store file on the Play Store, relieving the developer from storing the key store file locally​1​.
+
+2. **Incorrectly Enabling Google App Signing:** When preparing your release in Google Play Console, you need to enable Google App Signing correctly. For new applications, you need to accept the App signing by Google Play. For existing applications, you need to upload a key exported from Android Studio. It's important to download the App Signing Certificate as well. If done incorrectly, this can result in issues such as Google Maps not loading in the Android app in release mode​1​.
+
+3. **Incorrect Screenshot Dimensions:** When uploading screenshots to the Google Play Store, the image has to have a minimum length of 320px for any side, and a maximum length of 3840px for any side. If this is not done properly, you may face issues while uploading the screenshots. The solution is to ensure the screenshots are of the correct dimensions​​.
+
 ## Additional Resources
 
 For visual guides, here are some YouTube videos that can help you:
