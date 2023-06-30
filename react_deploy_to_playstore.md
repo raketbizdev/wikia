@@ -149,9 +149,7 @@ With these steps, you should be able to successfully deploy your React Native ap
 
 For visual guides, here are some YouTube videos that can help you:
 
-[How to Build, Test, and Deploy Your React Native Expo App to the Google Play Store](https://www.youtube.com/watch?v=pb6OvvSi8Qk)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pb6OvvSi8Qk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![How to Build, Test, and Deploy Your React Native Expo App to the Google Play Store](https://img.youtube.com/vi/pb6OvvSi8Qk/sddefault.jpg)](https://www.youtube.com/watch?v=pb6OvvSi8Qk)
 
 Deploying a React Native app using Expo to the Google Play Store
 Uploading screenshots to the Google Play Store
